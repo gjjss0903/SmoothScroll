@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+/* html scroll-behavior 은 IE에선 지원 하지 않음 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tap {
+  width: 100%;
+  height: 100px;
+}
+
+.btn {
+  display: flex;
+}
+.btn a {
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: dodgerblue;
+  border-radius: 5px;
+}
+
+.content {
+  border: 1px solid black;
+  width: 650px;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.content a {
+  background-color: pink;
+  padding: 5px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:300px) {
+  .content {
+    width: 300px;
+  }
+}
